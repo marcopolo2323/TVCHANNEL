@@ -1,0 +1,62 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    color: #f00;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    display: inline;
+    margin-left: -4em;
+} 
+
+.navbar{
+    position: fixed; /* Fijado en la parte superior */
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Fondo semi-transparente */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1; /* Asegura que el navbar esté encima del contenido */
+    transition: top 0.3s ease; /* Transición suave para mostrar/ocultar */
+}
+.navbar.hidden {
+    top: -100px; /* Oculta el navbar moviéndolo hacia arriba */
+  }
+  
+.navbar.visible {
+    top: 0; /* Muestra el navbar */
+  }
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.3em;
+  }
+.navbar li {
+    display: inline;
+  }
+
+.navbar a {
+    color: rgb(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+.navbar ul li a:hover{
+    color: #fff;
+}
+
+.navbar ul .busqueda{
+    display: flex;
+    justify-content: left;
+}
+
+.navbar ul.primerNav {
+  margin-left: -18em; /* Ajusta el margen izquierdo según sea necesario */
+  
+}
